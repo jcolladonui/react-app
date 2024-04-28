@@ -1,0 +1,112 @@
+.date-picker-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Adjust the gap between date picker boxes */
+  }
+  
+  .date-picker {
+    width: 200px;
+  }
+  
+  .date-picker label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .button-container {
+    margin-top: 20px; /* Add some space between date pickers and buttons */
+  }
+  
+  .button-container button {
+    margin-right: 10px; /* Add some space between buttons */
+    padding: 10px 20px; /* Add padding to the buttons */
+    background-color: #007bff; /* Set background color */
+    color: #fff; /* Set text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3; /* Darken background color on hover */
+  }
+  
+  .button-container button:active {
+    background-color: #0056b3; /* Darken background color when pressed */
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse; /* Collapse border spacing */
+  }
+  
+  th, td {
+    padding: 10px; /* Add padding to table cells */
+    text-align: left; /* Align text to the left */
+    border: 1px solid #ddd; /* Add border */
+  }
+  
+  th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+  }
+  
+  .approve-btn,
+  .reject-btn {
+    padding: 8px 16px; /* Add padding to the buttons */
+    margin-right: 8px; /* Add some space between buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    cursor: pointer; /* Set cursor to pointer */
+  }
+  
+  .approve-btn {
+    background-color: #28a745; /* Green color for approve button */
+    color: #fff; /* White text color */
+  }
+  
+  .reject-btn {
+    background-color: #dc3545; /* Red color for reject button */
+    color: #fff; /* White text color */
+  }
+  
+  .approve-btn:hover,
+  .reject-btn:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+  }
+  
+  .approve-btn:active,
+  .reject-btn:active {
+    transform: translateY(1px); /* Add slight translateY effect when pressed */
+  }
+
+  .edit-btn {
+    padding: 8px 16px; /* Add padding to the button */
+    margin-right: 8px; /* Add some space between buttons */
+    border: none; /* Remove border */
+    border-radius: 4px; /* Add border radius */
+    background-color: #007bff; /* Blue color for edit button */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Set cursor to pointer */
+  }
+  
+  .edit-btn:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+  }
+  
+  .edit-btn:active {
+    transform: translateY(1px); /* Add slight translateY effect when pressed */
+  }
+
+  .total-days-container {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
+  }
+  
+  .total-days-label {
+    margin-right: 10px; /* Add margin between label and input */
+  }
+  
+  .total-days-input {
+    flex-grow: 1; /* Allow input box to grow to fill remaining space */
+  }
+  
