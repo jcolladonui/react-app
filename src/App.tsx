@@ -8,6 +8,7 @@ import SubmitRequest from "./components/SubmitRequest";
 import ReviewRequest from "./components/ReviewRequest";
 import ManageEmployees from "./components/ManageEmployees";
 import Login from "./components/Login";
+import CreateAccount from "./components/CreateAccount";
 
 function App() {
   const [selectedOption, setSelectedOption] = useState("Dashboard");
@@ -21,7 +22,7 @@ function App() {
     setSelectedOption(option);
   };
 
-  const userLevel = 1; //Change this value to test that the level access works
+  const userLevel = 2; //Change this value to test that the level access works
 
   return (
     <div
@@ -37,6 +38,7 @@ function App() {
               "Submit Request",
               "Review Request",
               "Manage Employees",
+              "Create Account",
             ]}
             onSelectOption={handleSelectOption}
             selectedOption={selectedOption} // Pass the selectedOption to highlight the active button
@@ -57,6 +59,7 @@ function App() {
             {selectedOption === "Submit Request" && <SubmitRequest />}
             {selectedOption === "Review Request" && <ReviewRequest />}
             {selectedOption === "Manage Employees" && <ManageEmployees />}
+            {selectedOption === "Create Account" && <CreateAccount />}
           </div>
         </div>
       ) : (

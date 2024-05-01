@@ -29,3 +29,17 @@
 .sidebar-menu-item:hover {
     background-color: #640078; 
   }
+
+  .date-picker-container {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .date-picker {
+    width: 200px;
+  }
+  
+  .date-picker label {
+    display: block;
+    margin-bottom: 5px;
+  }

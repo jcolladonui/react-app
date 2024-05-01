@@ -30,6 +30,14 @@ const Sidebar: React.FC<Props> = ({
           if (item === "Review Request" && userLevel === 1) {
             return null; // Don't render "Review Request" option
           }
+          // Check if the current item is "Create Account" and user level is not 3
+          if (item === "Create Account" && userLevel === 1) {
+            return null; // Don't render "Create Account" option
+          }
+          // Check if the current item is "Manage Employees" and user level is not 3
+          if (item === "Manage Employees" && userLevel == 1) {
+            return null; // Don't render "Manage Employees" option
+          }
           return (
             <li
               key={item}
